@@ -1,0 +1,75 @@
+body {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+section.calculator {
+  width: 280px;
+  height: 450px;
+  background-color: #000000;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+section.calculator div.screen {
+  width: auto;
+  height: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 55px;
+  text-align: right;
+  text-justify: auto;
+  text-align: end;
+}
+
+section.calculator div.screen div.text {
+  position: relative;
+  bottom: -40px;
+}
+
+section.calculator div.controls {
+  width: auto;
+  height: 350px;
+  background-color: #000000;
+  -webkit-box-flex: 100%;
+      -ms-flex-positive: 100%;
+          flex-grow: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+
+section.calculator div.controls div.btn {
+  font-size: 45px;
+  text-align: center;
+  text-justify: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  color: white;
+  padding-top: 5px;
+}
+
+section.calculator div.controls div.btn.zero {
+  grid-column: span 2;
+  border-radius: 30px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+section.calculator div.controls div.btn.opt {
+  background-color: #666666;
+}
+
+section.calculator div.controls div.btn.opr {
+  background-color: #ff8800;
+}
+/*# sourceMappingURL=main.css.map */
